@@ -11,6 +11,9 @@
 	--duqcolors--blue: #4b0ac6;
 	--duqcolors--purple: #380982;
 	--duqcolors--darkblue: #091e41;
+
+	--duqcolors--offwhite: #f0f0f0;
+	--duqcolors--accent: #21b2a6;
 }
 
 html, body, div, span, applet, object,
@@ -169,8 +172,9 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #fff;
+		color: black;
 		font-weight: 600;
+		-webkit-text-stroke:thin;
 	}
 
 	em, i {
@@ -2506,7 +2510,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: var(--duqcolors--blue);
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2810,9 +2814,14 @@ input, select, textarea {
 		padding: 6em 0 4em 0 ;
 	}
 
+
+
 		.wrapper > .inner {
-			width: 60em;
+			/*width: 60em;*/
 			margin: 0 auto;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
 		}
 
 			@media screen and (max-width: 1280px) {
@@ -2836,12 +2845,12 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: var(--duqcolors--offwhite);
 			color: #c8ece9;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
-				color: #ffffff;
+				color: black;
 			}
 
 			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
@@ -3464,7 +3473,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: var(--duqcolors--blue);
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -4029,4 +4038,168 @@ input, select, textarea {
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+	/* Pricing Table */
+	.pricing-container
+	{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: center;
+		gap:2rem;
+		color:var(--duqcolors--darkblue);
+		
+	}
+
+	.pricing-card
+	{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		background-color:white;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15);;
+		border-radius: 0.25rem;
+		
+		
+		
+	}
+
+	.pricing-card-highlight
+	{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		background-color:white;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15);
+		border-radius: 0.25rem;
+		
+		
+		
+	}
+
+
+
+	.pricing-card-featurelist
+	{
+		list-style: none;
+		display: flex;
+        flex-direction: column;
+        align-items: start;
+		padding-left:0;
+		margin-bottom:2rem;
+
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		font-size: 1rem;
+		
+	}
+
+	.pricing-card-featurelist li
+	{
+		padding-left:0;
+	}
+
+	.pricing-card-textheader
+	{
+		font-size: 1.75rem;
+    	font-weight: 600;
+		line-height: 3;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		
+		
+	}
+
+	.pricing-card-textprice
+	{
+		font-size: 2.8rem;
+		font-weight: 600;
+		margin-top:0.25rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		
+		
+	}
+
+	.pricing-card-textprice-monthly
+	{
+		font-size: 1rem;
+		opacity: 0.5;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+
+	}
+
+	.pricing-card-usp
+	{
+		font-size:1rem;
+		
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		text-align: center;
+		background-color:var(--duqcolors--accent);
+		width: -webkit-fill-available;
+		border-radius:50rem;
+		color:white;
+		margin-top: 0.75rem;
+		margin-bottom: 1.5rem;
+	
+	}
+
+	.two-piece-header
+	{
+		display:flex;
+		flex-direction: column;
+		width:fit-content;
+		font-size: 3rem;
+		line-height: 3rem;
+		font-weight: 600;
+    	-webkit-text-stroke: thin;
+		margin-bottom: 3rem;
+		
+	}
+
+	.two-piece-header-one
+	{
+		
+		color:var(--duqcolors--blue);
+	}
+
+	.two-piece-header-two
+	{
+		color:black;
+	}
+
+	.button-container
+	{
+		margin-top:auto;
+		width:100%;
+		display:flex;
+		margin-bottom:0.25rem;
+	}
+
+	.button-program
+	{
+		margin-left:1.5rem;
+		background-color:var(--duqcolors--blue);
+		padding-left:1rem;
+		padding-right:1rem;
+		font-size: 1.2rem;
+    	font-weight: 600;
+		color:white;
+		width:50%;
+		line-height:3rem;
+
+	}
+
+	.disclaimer-container
+	{
+		width: 100%;
+		display: flex;
+		align-items: start;
+		padding-left: 1.5rem;
+		flex-direction: column;
+		font-size: 1rem;
+		font-weight: 600;
+		margin-bottom:2rem;
 	}
