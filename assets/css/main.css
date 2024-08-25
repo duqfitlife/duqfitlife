@@ -4188,9 +4188,15 @@ input, select, textarea {
 		line-height: 4rem;
 		margin-bottom: 4rem;
 		text-align: center;
-		font-family: 'Gilroy-ExtraBold';
-		
+		font-family: 'Gilroy-ExtraBold';	
 	}
+
+	@media (min-width: 300px) { .two-piece-header {font-size:2rem;line-height: 2rem; } }
+	@media (min-width: 480px) { .two-piece-header {font-size:3rem;line-height: 3rem; } }
+	@media (min-width: 736px) { .two-piece-header {font-size:3.5rem;line-height: 3.5rem;} }
+
+
+
 
 	.two-piece-header-one
 	{
@@ -4261,7 +4267,7 @@ input, select, textarea {
 		
 	}
 
-	@media (min-width: 300px) { .features-container { grid-template-columns: repeat(1, 1fr); justify-content: center;padding: 0rem 1rem 0rem 1rem;} }
+	@media (min-width: 300px) { .features-container { grid-template-columns: repeat(1, 1fr); justify-content: center;padding: 0rem 2rem 0rem 2rem;} }
 	@media (min-width: 480px) { .features-container { grid-template-columns: repeat(1, 1fr); padding: 0rem 2rem 0rem 2rem;} }
 	@media (min-width: 736px) { .features-container { grid-template-columns: repeat(2, 1fr); padding: 0rem 6rem 0rem 6rem;} }
 	@media (min-width: 1280px) { .features-container { grid-template-columns: repeat(3, 1fr); padding: 0rem 8rem 0rem 8rem; } }
