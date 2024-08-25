@@ -4078,6 +4078,7 @@ input, select, textarea {
 		justify-content: center;
 		gap:2rem;
 		color:var(--duqcolors--darkblue);
+		width: 100px !important;
 		
 	}
 
@@ -4237,6 +4238,7 @@ input, select, textarea {
 	.section-features
 	{
 		background-color: var(--duqcolors--offwhite);
+		width: 100px !important;
 	}
 
 	.section-features .inner
