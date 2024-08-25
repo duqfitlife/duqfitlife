@@ -3397,6 +3397,9 @@ input, select, textarea {
 		top: 0;
 		width: 20em;
 		z-index: 10002;
+		
+		/*For preventing right scrolling on mobile*/
+		margin:0
 	}
 
 		#menu ul {
@@ -3448,6 +3451,9 @@ input, select, textarea {
 			top: 0;
 			vertical-align: middle;
 			width: 7em;
+	
+			/*For preventing right scrolling on mobile*/
+			margin:0
 		}
 
 		@media screen and (max-width: 736px) {
@@ -4049,6 +4055,13 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	/*
+	.landing .is-mobile #menu
+	{
+		display:none;
+	}
+	*/
 
 	/* Pricing Table */
 	.pricing-container
