@@ -119,6 +119,7 @@ input, select, textarea {
 
 	body {
 		/*background: var(--duqcolors--offwhite);*/
+		width:100%;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3363,6 +3364,7 @@ input, select, textarea {
 		transition: opacity 0.5s ease;
 		opacity: 1;
 		padding-top: 3em;
+		width:100%;
 	}
 
 		#page-wrapper:before {
@@ -4078,7 +4080,7 @@ input, select, textarea {
 		justify-content: center;
 		gap:2rem;
 		color:var(--duqcolors--darkblue);
-		width: 100px !important;
+		width: 100% !important;
 		
 	}
 
@@ -4238,7 +4240,7 @@ input, select, textarea {
 	.section-features
 	{
 		background-color: var(--duqcolors--offwhite);
-		width: 100px !important;
+		width: 100% !important;
 	}
 
 	.section-features .inner
