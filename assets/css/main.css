@@ -3452,7 +3452,7 @@ input, select, textarea {
 			vertical-align: middle;
 			width: 7em;
 	
-			/*For preventing right scrolling on mobile*/
+			/*DISABLE HORIZONTAL SCROLLING*/
 			margin:0
 		}
 
@@ -4031,6 +4031,11 @@ input, select, textarea {
 
 		display:flex;
 		flex-direction: column;
+
+		/*DISABLE HORIZONTAL SCROLLING*/
+		width:100% !important;
+		overflow-x: hidden !important;
+		margin:0 !important;
 	}
 
 	body.landing #footer {
