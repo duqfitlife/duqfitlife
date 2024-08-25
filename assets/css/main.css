@@ -19,8 +19,10 @@
 
 html
 {
+	/*
 	width: auto!important;
 	overflow-x: hidden !important;
+	*/
 }
 
 html, body, div, span, applet, object,
@@ -3399,7 +3401,7 @@ input, select, textarea {
 		z-index: 10002;
 		
 		/*For preventing right scrolling on mobile*/
-		margin:0
+		/*margin:0*/
 	}
 
 		#menu ul {
@@ -3453,7 +3455,7 @@ input, select, textarea {
 			width: 7em;
 	
 			/*DISABLE HORIZONTAL SCROLLING*/
-			margin:0
+			/*margin:0*/
 		}
 
 		@media screen and (max-width: 736px) {
