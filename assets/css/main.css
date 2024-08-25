@@ -19,7 +19,8 @@
 
 html
 {
-		overflow-x: hidden !important;
+	width: auto!important;
+	overflow-x: hidden !important;
 }
 
 html, body, div, span, applet, object,
