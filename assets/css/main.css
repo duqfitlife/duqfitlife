@@ -4402,6 +4402,26 @@ input, select, textarea {
 	}
 
 	/*Testimonials*/
+	.section-testimonials
+	{
+		display:flex;
+		flex-direction: column;
+		background-color:white;
+		
+		width: 100% !important;
+		/*height:100vh;*/
+    	padding: 6rem 0 4rem 0;
+	}
+
+	.section-testimonials .two-piece-header
+	{
+		align-self: center;
+		margin-bottom:0rem !important;
+	}
+
+
+
+
 	.slider {
 		height: 50vh;
 		position: relative;
@@ -4425,7 +4445,8 @@ input, select, textarea {
 	  .slider__nav {
 		width: 12px;
 		height: 12px;
-		margin: 2rem 12px;
+		/*margin: 2rem 12px;*/
+		margin:2rem 1rem;
 		border-radius: 50%;
 		z-index: 10;
 		outline: 6px solid #ccc;
@@ -4469,10 +4490,11 @@ input, select, textarea {
 		-webkit-flex-flow: row nowrap;
 			-ms-flex-flow: row nowrap;
 				flex-flow: row nowrap;
+		padding-top: 4rem;
 	  }
 	  .slider__contents {
 		height: 100%;
-		padding: 2rem;
+		/*padding: 2rem;*/
 		text-align: center;
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -4499,12 +4521,29 @@ input, select, textarea {
 	  {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+
 		background-color: white;
-		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15);
-		border-radius: 0.25rem;
 		color: var(--duqcolors--textblack);
-		padding: 2rem;
+
+		padding-bottom: 8rem;
+
 	  }
+
+	  @media (min-width: 300px) { .slider_card {width: 100%;} }
+	  @media (min-width: 736px) { .slider_card {width: 50%;} }
+
+	  .slider_card i
+	  {
+		color: var(--duqcolors--offwhite);
+		font-size: xx-large;
+		padding: 1rem;
+		background: var(--duqcolors--blue);
+		border-radius: 50rem;
+	  }
+
+
+
 
 	  .slider__image {
 		font-size: 2.7rem;
@@ -4512,15 +4551,21 @@ input, select, textarea {
 	  }
 	  .slider__caption {
 		font-weight: 500;
-		margin: 2rem 0 1rem;
 		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 		text-transform: uppercase;
+		color: var(--duqcolors--textblack);
+		margin-bottom: 0;
+		line-height: 4;
 	  }
+
 	  .slider__txt {
 		color: #999;
 		margin-bottom: 3rem;
-		max-width: 300px;
+		max-width: 75%;
 	  }
+
+	  @media (min-width: 300px) { .slider__txt {max-width: 100%;} }
+	  @media (min-width: 736px) { .slider__txt {max-width: 75%;} }
 	  
 	  @-webkit-keyframes check {
 		50% {
