@@ -4893,6 +4893,76 @@ input, select, textarea {
 	  @media (min-width: 1280px) { .video-group-title { padding-left:4rem;padding-right:4rem } }
 
 
+	  .app-section-one
+	  {
+		width:100%;
+	  }
+
+	  .app-section-one .wrapper
+	  {
+		width:100%;
+		display:flex;
+		height:100%;
+	  }
+
+	  @media (min-width: 300px) { .app-section-one .wrapper {flex-direction: column; } }
+	  @media (min-width: 1280px) { .app-section-one .wrapper {flex-direction: row; } }
+
+	  @media (min-width: 300px) { .app-section-one .image-container {width: 100%;} }
+	  @media (min-width: 1280px) { .app-section-one .image-container {width:50%; } }
+
+	  @media (min-width: 300px) { .app-section-one .text-container {width: 100%; } }
+	  @media (min-width: 1280px) { .app-section-one .text-container {width:50%; } }
+
+	  .app-section-one .image-container
+	  {
+		
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		background-image: url(../../images/phone_standing_app.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	  }
+
+	  @media (min-width: 300px) { .app-section-one .image-container {background-image: url(../../images/phone_horizontal.png);height:20vh;} }
+	  @media (min-width: 1280px) { .app-section-one .image-container {background-image: url(../../images/phone_standing_app.png);height:60vh} }
+
+
+
+
+	  .app-section-one .text-container
+	  {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		
+	  }
+
+	 
+	  @media (min-width: 480px) { .app-section-one .text-container {padding: 0; } }
+	  @media (min-width: 736px) { .app-section-one .text-container {padding: 1.5rem 3rem 1.5rem 3rem;} }
+	  @media (min-width: 1280px) { .app-section-one .text-container {padding: 2rem 4rem 2rem 4rem;} }
+
+
+	  .app-section-one .text-container .title
+	  {
+		color:var(--duqcolors--blue);
+		
+		font-family: 'Gilroy-ExtraBold';
+	  }
+
+	  @media (min-width: 300px) { .app-section-one .text-container .title {font-size:2.5rem;line-height: 2.5rem;text-align: center;margin-bottom: 2rem;margin-top:2rem } }
+	  @media (min-width: 480px) { .app-section-one .text-container .title {font-size:3rem;line-height: 3rem; } }
+	  @media (min-width: 736px) { .app-section-one .text-container .title {font-size:3.5rem;line-height: 3.5rem;} }
+	  @media (min-width: 1280px) { .app-section-one .text-container .title {font-size:4rem;line-height: 4rem;text-align: start;margin-bottom: 4rem;margin-top:0} }
+
+
+	  .app-section-one .text-container .text
+	  {
+		color:var(--duqcolors--textblack);
+	  }
 
 
 	
