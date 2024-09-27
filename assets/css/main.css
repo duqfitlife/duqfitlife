@@ -5076,7 +5076,7 @@ input, select, textarea {
 
 		height: 50vh;
 
-		object-fit: cover;
+		object-fit: contain;
 
 	  }
 	  .carousel .card h2 {
