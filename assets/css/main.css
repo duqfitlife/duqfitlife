@@ -4964,5 +4964,28 @@ input, select, textarea {
 		color:var(--duqcolors--textblack);
 	  }
 
+	  .slider-card-app-image
+	  {
+		height:45vh;
+		width: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	  }
+
+	  .slider__txt-app
+	  {
+		color: #999;
+		margin-bottom: 1rem;
+		margin-top:2rem;
+		max-width: 75%;
+	  }
+	  @media (min-width: 300px) { .slider__txt-app {max-width: 90%;} }
+	  @media (min-width: 736px) { .slider__txt-app {max-width: 75%;} }
+
+	  
+
+
+
 
 	
