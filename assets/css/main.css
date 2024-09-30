@@ -183,8 +183,8 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: black;
-		font-weight: 600;
+		color: var(--duqcolors--offwhite);
+		font-weight: 500;
 		-webkit-text-stroke:thin;
 	}
 
@@ -2520,6 +2520,15 @@ input, select, textarea {
 			font-size: 1.35em;
 		}
 
+
+		.button.accent
+		{
+			background-color: var(--duqcolors--accent);
+			box-shadow: none !important;
+			color: #ffffff !important;
+			border-radius:50rem;
+		}
+
 		input[type="submit"].primary,
 		input[type="reset"].primary,
 		input[type="button"].primary,
@@ -4358,7 +4367,7 @@ input, select, textarea {
 
 	@media (min-width: 300px) { .headliner {font-size:1.5rem;line-height: 1.5rem;margin-bottom:2rem; } }
 	@media (min-width: 480px) { .headliner {font-size:2.5rem;line-height: 2.5rem;margin-bottom:2.5rem; } }
-	@media (min-width: 736px) { .headliner {font-size:4rem;line-height: 4rem; margin-bottom:4rem;} }
+	@media (min-width: 736px) { .headliner {font-size:3rem;line-height: 4rem; margin-bottom:4rem;} }
 
 
 	.inner .separator-with-logo .separator-line
@@ -4382,6 +4391,15 @@ input, select, textarea {
 	{
 		margin-bottom:4rem;
 		text-align: center;
+	}
+
+	.intro-cta-buttons
+	{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		gap:1rem;
 	}
 
 	/*Testimonials*/
@@ -5102,6 +5120,15 @@ input, select, textarea {
 		}
 	  }
 
+
+	  .long-text-header
+	  {
+		font-family: 'Gilroy-Light';
+		font-size: 2rem;
+		color: var(--duqcolors--textblack);
+		width: 60%;
+		margin-bottom: 4rem;
+	  }
 	  
 
 
