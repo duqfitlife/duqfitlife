@@ -3966,6 +3966,22 @@ input, select, textarea {
 					color: #fff;
 				}
 
+		#footer .company_pages
+		{
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 0.6em;
+			letter-spacing: 0.225em;
+			list-style: none;
+			padding: 0;
+			text-transform: uppercase;
+			display:flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		} 
+
+
+
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 0.8em;
