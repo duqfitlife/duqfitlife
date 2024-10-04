@@ -183,8 +183,8 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: var(--duqcolors--offwhite);
-		font-weight: 500;
+		color: var(--duqcolors--textblack);
+		font-weight: 600;
 		-webkit-text-stroke:thin;
 	}
 
@@ -4214,15 +4214,14 @@ input, select, textarea {
 		display: flex;
 		flex-direction: column;
 		width: fit-content;
-		margin-bottom: 4rem;
 		text-align: center;
 		font-family: 'Gilroy-ExtraBold';	
 	}
 
-	@media (min-width: 300px) { .two-piece-header {font-size:2.5rem;line-height: 2.5rem; } }
-	@media (min-width: 480px) { .two-piece-header {font-size:3rem;line-height: 3rem; } }
-	@media (min-width: 736px) { .two-piece-header {font-size:3.5rem;line-height: 3.5rem;} }
-	@media (min-width: 1280px) { .two-piece-header {font-size:4rem;line-height: 4rem;} }
+	@media (min-width: 300px) { .two-piece-header {font-size:1.5rem;line-height: 2rem;margin-bottom:2rem } }
+	@media (min-width: 480px) { .two-piece-header {font-size:2rem;line-height: 2.5rem;margin-bottom:2.5rem } }
+	@media (min-width: 736px) { .two-piece-header {font-size:3.5rem;line-height: 3.5rem;margin-bottom:3.5rem} }
+	@media (min-width: 1280px) { .two-piece-header {font-size:4rem;line-height: 4rem;margin-bottom:4rem} }
 
 
 
@@ -4276,8 +4275,12 @@ input, select, textarea {
 	{
 		background-color: var(--duqcolors--offwhite);
 		width: 100% !important;
-		padding:6rem 0 6rem 0;
 	}
+
+	@media (min-width: 300px) { .section-features { padding:2rem 0 2rem 0;} }
+	@media (min-width: 480px) { .section-features { padding:2.5rem 0 2.5rem 0;} }
+	@media (min-width: 736px) { .section-features { padding:4.5rem 0 4.5rem 0;} }
+	@media (min-width: 1280px) { .section-features { padding:6rem 0 6rem 0;} }
 
 	.section-features .inner
 	{
@@ -4389,18 +4392,27 @@ input, select, textarea {
 
 	.inner .intro-text
 	{
-		margin-bottom:4rem;
 		text-align: center;
 	}
+
+	@media (min-width: 300px) {  .inner .intro-text {margin-bottom:2.5rem} }
+	@media (min-width: 480px) {  .inner .intro-text {margin-bottom:3rem} }
+	@media (min-width: 736px) {  .inner .intro-text {margin-bottom:3.5rem} }
+	@media (min-width: 1100px) {  .inner .intro-text {margin-bottom:4rem} }
 
 	.intro-cta-buttons
 	{
 		display:flex;
 		align-items: center;
 		justify-content: center;
-		flex-direction: row;
-		gap:1rem;
+
+		
 	}
+
+	@media (min-width: 300px) {  .intro-cta-buttons {gap:0;flex-direction: column;} }
+	@media (min-width: 480px) { .intro-cta-buttons {} }
+	@media (min-width: 736px) { .intro-cta-buttons {flex-direction: row;} }
+	@media (min-width: 1100px) {  .intro-cta-buttons {gap:1rem} }
 
 	/*Testimonials*/
 	.section-testimonials
@@ -4693,8 +4705,10 @@ input, select, textarea {
 	  }
 
 	  @media (min-width: 300px) { .app-features {font-size:1.2rem; line-height: 3rem; } }
-	  @media (min-width: 480px) { .app-features {font-size:1.3rem } }
+	  @media (min-width: 480px) { .app-features {font-size:1.3rem;} }
 	  @media (min-width: 736px) { .app-features {font-size:1.5rem; line-height: 4rem;} }
+
+
 
 	  .app-features-li
 	  {
@@ -5010,8 +5024,15 @@ input, select, textarea {
 		align-items: center;
 		justify-content: center;
 		background:white;
-		padding:6rem 0 6rem 0
+		
 	  }
+
+	  @media (min-width: 300px) {  .section-app-features {padding:2rem 0 2rem 0} }
+	  @media (min-width: 480px) {  .section-app-features {padding:3.5rem 0 3.5rem 0} }
+	  @media (min-width: 736px) {  .section-app-features {padding:4.5rem 0 4.5rem 0} }
+	  @media (min-width: 1280px) {  .section-app-features {padding:6rem 0 6rem 0} }
+
+
 
 	  .app-features-wrapper {
 		max-width: 1100px;
@@ -5099,11 +5120,15 @@ input, select, textarea {
 	  }
 	  .carousel .card h2 {
 		color:var(--duqcolors--textblack);
-		font-family: 'Gilroy-ExtraBold';
+		font-family: 'Gilroy-Light';
 		font-weight: 600;
-		font-size: 1.2rem;
+		font-size: 0.8rem;
 		margin: 30px 0 5px;
+		margin-left:1rem;
+		margin-right:1rem;
+		text-align: center;
 	  }
+
 	  .carousel .card span {
 		color: #999;
 		font-size: 1.1rem;
@@ -5124,11 +5149,17 @@ input, select, textarea {
 	  .long-text-header
 	  {
 		font-family: 'Gilroy-Light';
-		font-size: 2rem;
 		color: var(--duqcolors--textblack);
-		width: 60%;
-		margin-bottom: 4rem;
 	  }
+
+	  @media (min-width: 300px) {   .long-text-header {width:85%;margin-bottom:2rem;font-size:0.9rem} }
+	  @media (min-width: 480px) {   .long-text-header {width:75%;margin-bottom:2.5rem;font-size:1.2rem} }
+	  @media (min-width: 736px) {   .long-text-header {width:70%;margin-bottom:3rem;font-size:1.7rem} }
+	  @media (min-width: 1280px) {   .long-text-header {width:60%;margin-bottom:4rem;font-size:2rem} }
+
+
+
+	 
 	  
 
 
