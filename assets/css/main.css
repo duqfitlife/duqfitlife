@@ -4384,9 +4384,9 @@ input, select, textarea {
 		font-family: 'Gilroy-ExtraBold';
 	}
 
-	@media (min-width: 300px) { .headliner {font-size:1.5rem;line-height: 1.5rem;margin-bottom:2rem; } }
-	@media (min-width: 480px) { .headliner {font-size:2.5rem;line-height: 2.5rem;margin-bottom:2.5rem; } }
-	@media (min-width: 736px) { .headliner {font-size:3rem;line-height: 4rem; margin-bottom:4rem;} }
+	@media (min-width: 300px) { .headliner {font-size:1.5rem;line-height: 2rem;margin-bottom:2rem; } }
+	@media (min-width: 480px) { .headliner {font-size:2rem;line-height: 3rem;margin-bottom:2.5rem; } }
+	@media (min-width: 736px) { .headliner {font-size:2.5rem;line-height: 3.5rem; margin-bottom:4rem;} }
 
 
 	.inner .separator-with-logo .separator-line
@@ -5174,6 +5174,100 @@ input, select, textarea {
 	  @media (min-width: 1280px) {   .long-text-header {width:60%;margin-bottom:4rem;font-size:2rem} }
 
 
+	  @media (min-width: 300px) {   ul.actions.special {margin-bottom:1rem} }
+
+	  
+
+
+	  /*Privacy en algemen voorwaarden*/
+	  .inner-text
+	  {
+		margin: 0 auto;
+	  }
+
+	  @media (min-width: 300px) {   .inner-text {width:90%;} }
+	  @media (min-width: 480px) {   .inner-text {width:85%;} }
+	  @media (min-width: 736px) {   .inner-text {width:80%;} }
+	  @media (min-width: 1280px) {   .inner-text {width:75%;} }
+
+
+
+	  #textpage > header {
+		padding: 10em 10em 10em 10em ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+	#textpage > header h2 {
+		font-family: 'Gilroy-ExtraBold';
+		color:var(--duqcolors--offwhite);
+
+		font-size: 3rem;
+		margin: 0 0 0.5em 0;
+	}
+
+	#textpage > header p {
+		color: inherit;
+		font-family: 'Gilroy-Light';
+		top: 0;
+	}
+
+	@media (min-width: 300px) {#textpage > header p {font-size:0.9rem;} }
+	@media (min-width: 480px) {#textpage > header p {font-size:1.1rem;} }
+	@media (min-width: 736px) {#textpage > header p {font-size:1.3rem;} }
+	@media (min-width: 1280px) {#textpage > header p {font-size:1.5rem;} }
+
+		#textpage > header p a {
+			color: inherit;
+		}
+
+	@media screen and (max-width: 1680px) {
+
+		#textpage > header {
+			padding: 10em 0 8em 0 ;
+		}
+
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		#textpage > header {
+			padding: 8em 3em 6em 3em ;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#textpage > header {
+			padding: 10em 3em 8em 3em ;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#textpage > header {
+			padding: 5em 3em 3em 3em ;
+		}
+
+			#textpage > header h2 {
+				font-size: 1.25em;
+				margin: 0 0 1em 0;
+			}
+
+	}
+
+body.is-mobile #textpage > header {
+	background-attachment: scroll;
+}
 
 	 
 	  
