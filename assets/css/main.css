@@ -4136,6 +4136,14 @@ input, select, textarea {
 		border-radius: 0.25rem;
 	}
 
+	@media (min-width: 300px) { 	.pricing-card { width:100%;} }
+	@media (min-width: 736px) { 	.pricing-card { width:50%;} }
+	@media (min-width: 1280px) { 	.pricing-card { width: 25%; } }
+
+	@media (min-width: 300px) { 	.pricing-card-highlight { width:100%;} }
+	@media (min-width: 736px) { 	.pricing-card-highlight { width:50%;} }
+	@media (min-width: 1280px) { 	.pricing-card-highlight { width: 25%; } }
+
 	
 
 	.pricing-card-highlight
@@ -4217,7 +4225,9 @@ input, select, textarea {
 		margin-right: 1.5rem;
 		text-align: center;
 		background-color:var(--duqcolors--accent);
-		width: -webkit-fill-available;
+		width: max-content;
+		padding-left:1rem;
+		padding-right:1rem;
 		border-radius:50rem;
 		color:white;
 		margin-top: 0.75rem;
