@@ -4826,6 +4826,7 @@ input, select, textarea {
 	{
 		color: var(--duqcolors--textblack);
 		display:flex;
+		gap: 0.5rem;
 		flex-direction: row;
 	}
 
@@ -4842,7 +4843,7 @@ input, select, textarea {
 		font-weight: 600;
 		
 		line-height: 2rem;
-		margin-right:1rem;
+		
 		padding: 0.5rem 1rem 0.5rem 1rem;
 		border-radius:10rem;
 	}
