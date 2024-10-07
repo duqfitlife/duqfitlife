@@ -3560,7 +3560,7 @@ input, select, textarea {
 								background-repeat: no-repeat;
 								content: '';
 								display: inline-block;
-								height: 3.75em;
+								height: 4rem;
 								vertical-align: top;
 								width: 2em;
 							}
